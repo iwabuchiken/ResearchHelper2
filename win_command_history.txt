@@ -1,0 +1,88 @@
+a
+cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
+gitk
+
+a
+cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
+rails s --port 3000
+
+[Set up 20120529_173711]----------------------------
+rails new ResearchHelper2
+
+copy C:\WORKS\WORKSPACES_APTANA\ChineseReader\.project .
+
+### EDIT .project#name	###
+
+### IMPORT TO APTANA	###
+
+copy C:\WORKS\WORKSPACES_APTANA\ResearchHelper\win_command_history.txt .
+
+copy C:\WORKS\WORKSPACES_APTANA\ResearchHelper\Gemfile .
+
+bundle update
+
+[Git 20120529_174048]
+### CREATE REPO AT GitHub	###
+
+git init
+
+git add .
+
+git commit -a
+
+git remote add origin git@github.com:iwabuchiken/ResearchHelper2.git
+
+g p origin master
+
+### BROWSE GitHub	###
+
+[heroku 20120529_174501]
+gem install heroku --no-ri --no-rdoc
+
+heroku keys:add
+
+heroku create --stack cedar
+
+g p heroku master
+
+heroku rename cosmos-research-helper
+
+git remote rm heroku
+
+git remote add heroku git@heroku.com:cosmos-english-reader.git
+
+heroku open
+
+[/Set up 20120529_173711]----------------------------
+
+[Model 20120608_092826]-------------------------------
+rails generate scaffold Article hl:text src:string link:string
+
+bundle exec rake db:migrate
+
+bundle update
+
+[]---------------------------
+a
+cd C:\WORKS\WORKSPACES_APTANA\NewsReader_eclipse
+r s
+
+[]---------------------------
+heroku run rake db:migrate
+
+[20120627_175602]====================================
+rails generate scaffold Article title:string text:text genre:string url:text related:text memo:text
+
+bundle exec rake db:migrate
+
+[20120630_115945]====================================
+rails generate scaffold Memo article_id:integer text:text url:text related:text
+bundle exec rake db:migrate
+
+[20120702_124201]====================================
+rails generate migration ChangeColNameMemoToMemos
+
+bundle exec rake db:migrate
+
+
+============EOF============
