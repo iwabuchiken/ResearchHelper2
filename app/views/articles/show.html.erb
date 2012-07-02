@@ -15,6 +15,22 @@
   <%= @article.url %>
 </p>
 
+<p>
+  <b>Memos:</b><br />
+  <% if @memos.length > 0 %>
+  	<% @memos.each_with_index do |memo, i| %>
+  		&lt;Memo <%= i %>&gt;<br />
+  		<%= memo.text %><br />
+  	<% end %>
+  <% else %>
+  	No memo
+  <% end %>
+</p>
+
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+
+<!-- <br /> -->
+<%#= @memos.class %>
+<%#= @memos.length %>
