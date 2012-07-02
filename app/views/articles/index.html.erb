@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+  	<th>Id</th>
     <th>Title</th>
     <th>Text</th>
     <th>Url</th>
@@ -12,6 +13,7 @@
 
 <% @articles.each do |article| %>
   <tr>
+  	<td><%= article.id %></td>
     <td><%= article.title %></td>
     <td><%= article.text %></td>
     <td><%= article.url %></td>

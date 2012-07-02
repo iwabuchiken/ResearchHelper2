@@ -64,8 +64,8 @@ g p origin master
 
 
 [Model]-------------------------------
-rails generate scaffold Memo text:text url:string article_id:integer 
-bundle exec rake db:migrate
+#*rails generate scaffold Memo text:text url:string article_id:integer 
+#*bundle exec rake db:migrate
 heroku run rake db:migrate
 
 [20120702_124201]====================================
