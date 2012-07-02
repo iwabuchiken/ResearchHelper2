@@ -68,6 +68,9 @@ g p origin master
 #*bundle exec rake db:migrate
 heroku run rake db:migrate
 
+[Git: grep]-------------------------------
+git log -3 --grep=master
+
 [20120702_124201]====================================
 
 ============EOF============
