@@ -55,23 +55,19 @@ g p origin master
 
 [/Set up 20120529_173711]----------------------------
 
-[Model 20120608_092826]-------------------------------
+[Model]-------------------------------
 #*rails generate scaffold Article title:string text:text url:string
 
 #*bundle exec rake db:migrate
 
+#*heroku run rake db:migrate
+
+
+[Model]-------------------------------
+rails generate scaffold Memo text:text url:string article_id:integer 
+bundle exec rake db:migrate
 heroku run rake db:migrate
 
-bundle update
-
-[20120630_115945]====================================
-rails generate scaffold Memo article_id:integer text:text url:text related:text
-bundle exec rake db:migrate
-
 [20120702_124201]====================================
-rails generate migration ChangeColNameMemoToMemos
-
-bundle exec rake db:migrate
-
 
 ============EOF============

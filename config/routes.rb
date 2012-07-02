@@ -1,4 +1,6 @@
 ResearchHelper2::Application.routes.draw do
+  resources :memos
+
   resources :articles
 
   #

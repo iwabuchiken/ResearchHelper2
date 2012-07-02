@@ -10,5 +10,10 @@
 
 <%= yield %>
 
+<hr />
+	<%= link_to_unless_current "Articles list", articles_path %>
+	<%= link_to_unless_current "Memos list", memos_path %>
+<hr />
+
 </body>
 </html>
