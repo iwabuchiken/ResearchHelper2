@@ -1,10 +1,7 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<attribute_registry FONT_SIZE="24" RESTRICTED="true">
-<attribute_name NAME="version" RESTRICTED="true" VISIBLE="true">
-<attribute_value VALUE=""/>
-<attribute_value VALUE="1"/>
-</attribute_name>
+<attribute_registry FONT_SIZE="24">
+<attribute_name NAME="version" VISIBLE="true"/>
 </attribute_registry>
 <node CREATED="1341201131859" ID="ID_711108113" MODIFIED="1341204069875" TEXT="ResearchHelper2">
 <node CREATED="1341204358531" ID="ID_745526613" MODIFIED="1341204361031" POSITION="right" TEXT="LOG">
@@ -254,6 +251,57 @@
 <node CREATED="1341202339453" ID="ID_260099023" MODIFIED="1341207642562" TEXT="Remote">
 <icon BUILTIN="button_ok"/>
 </node>
+</node>
+</node>
+<node CREATED="1341206345890" ID="ID_430108637" MODIFIED="1341212539546" TEXT="B4 =&gt; Beautify views">
+<attribute NAME="version" VALUE="2"/>
+<node CREATED="1341206362546" ID="ID_1564027892" MODIFIED="1341213464234" TEXT="articles#show">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341206733515" ID="ID_1382082778" MODIFIED="1341212649156" TEXT="&quot;Memo X&quot; =&gt; start from 1">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1341212684125" ID="ID_942994981" MODIFIED="1341212887703" TEXT="&quot;url&quot; =&gt; Add link">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341212759843" ID="ID_1047422649" MODIFIED="1341212887703" TEXT="_blank">
+<icon BUILTIN="button_ok"/>
+</node>
+</node>
+</node>
+<node CREATED="1341206362546" ID="ID_1382263298" MODIFIED="1341213464234" TEXT="memos#index">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341206502828" ID="ID_228872626" MODIFIED="1341213091968" TEXT="&quot;url&quot; =&gt; &quot;Go&quot;">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1341206555375" ID="ID_1511390772" MODIFIED="1341213295203" TEXT="&quot;text&quot; =&gt; add link to &quot;show&quot;">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1341206721171" ID="ID_1565606704" MODIFIED="1341213295203" TEXT="Delete &quot;Destroy&quot; link and &quot;Edit&quot; link">
+<icon BUILTIN="button_ok"/>
+</node>
+</node>
+<node CREATED="1341206362546" ID="ID_1556221918" MODIFIED="1341213464234" TEXT="memos#show">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341206733515" ID="ID_40806902" MODIFIED="1341213295187" TEXT="Add &quot;Destroy&quot; link">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1341213236937" ID="ID_1658092954" MODIFIED="1341213295187" TEXT="&quot;Destroy&quot; =&gt; color: red">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1341206502828" ID="ID_812867261" MODIFIED="1341213430703" TEXT="&quot;url&quot; =&gt; show &quot;No entry&quot; if empty">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1341206502828" ID="ID_1825681603" MODIFIED="1341213430703" TEXT="&quot;url&quot; =&gt; truncate">
+<icon BUILTIN="button_ok"/>
+</node>
+</node>
+<node CREATED="1341213468765" ID="ID_1102212017" MODIFIED="1341213471703" TEXT="COMMIT"/>
+<node CREATED="1341205149687" ID="ID_117865613" MODIFIED="1341212539546" TEXT="MERGE"/>
+<node CREATED="1341203746828" ID="ID_1284868113" MODIFIED="1341212539546" TEXT="PUSH">
+<node CREATED="1341202522671" ID="ID_960782962" MODIFIED="1341212539546" TEXT="GitHub"/>
+<node CREATED="1341202527453" ID="ID_1602732159" MODIFIED="1341212539546" TEXT="Heroku"/>
+</node>
+<node CREATED="1341203998843" ID="ID_815241353" MODIFIED="1341212539546" TEXT="Access page">
+<node CREATED="1341202339453" ID="ID_447445184" MODIFIED="1341212539546" TEXT="Remote"/>
 </node>
 </node>
 <node CREATED="1341207629265" ID="ID_672129126" MODIFIED="1341207637000" TEXT="B5 =&gt; New model ===&gt; Genre"/>

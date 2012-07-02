@@ -7,7 +7,11 @@
 
 <p>
   <b>Url:</b>
-  <%= @memo.url %>
+	<% if @memo.url.length > 0 %>
+  		<%= link_to truncate(@memo.url, length:40), @memo.url, {:target => "_blank"} %>
+	<% else %>
+		No entry
+	<% end %>
 </p>
 
 <p>
@@ -17,4 +21,7 @@
 
 
 <%= link_to 'Edit', edit_memo_path(@memo) %> |
-<%= link_to 'Back', memos_path %>
+<%= link_to 'Back', memos_path %>&nbsp;&nbsp;|&nbsp;
+<%= link_to 'Destroy', @memo, 
+			confirm: 'Are you sure?', method: :delete,
+			style: "color: red;" %>

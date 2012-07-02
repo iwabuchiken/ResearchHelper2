@@ -6,20 +6,14 @@
     <th>Text</th>
     <th>Url</th>
     <th>Article</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @memos.each do |memo| %>
   <tr>
   	<td><%= memo.id %></td>
-    <td><%= memo.text %></td>
-    <td><%= memo.url %></td>
+    <td><%= link_to memo.text, memo %></td>
+    <td><%= link_to "Go", memo.url %></td>
     <td><%= memo.article_id %></td>
-    <td><%= link_to 'Show', memo %></td>
-    <td><%= link_to 'Edit', edit_memo_path(memo) %></td>
-    <td><%= link_to 'Destroy', memo, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

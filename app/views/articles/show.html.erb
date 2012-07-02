@@ -13,14 +13,14 @@
 <p>
   <b>Url:</b>
   <%#= @article.url %>
-  <%= truncate(@article.url, length:40) %>
+  <%= link_to truncate(@article.url, length:40), @article.url, {:target => "_blank"} %>
 </p>
 
 <p>
   <b>Memos:</b><br />
   <% if @memos.length > 0 %>
   	<% @memos.each_with_index do |memo, i| %>
-  		&lt;Memo <%= i %>&gt;<br />
+  		&lt;Memo <%= i + 1 %>&gt;<br />
   		<%= memo.text %><br />
   	<% end %>
   <% else %>
@@ -36,3 +36,4 @@
 <!-- <br /> -->
 <%#= @memos.class %>
 <%#= @memos.length %>
+<%#= truncate(@article.url, length:40) %>
