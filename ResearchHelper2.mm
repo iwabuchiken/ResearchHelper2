@@ -207,9 +207,13 @@
 <node CREATED="1341206502828" ID="ID_737358852" MODIFIED="1341206514187" TEXT="&quot;url&quot; =&gt; &quot;Go&quot;">
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1341206555375" ID="ID_1558612409" MODIFIED="1341206568390" TEXT="&quot;title&quot; =&gt; add link to &quot;show&quot;"/>
+<node CREATED="1341206555375" ID="ID_1558612409" MODIFIED="1341206719234" TEXT="&quot;title&quot; =&gt; add link to &quot;show&quot;">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1341206721171" ID="ID_1397617284" MODIFIED="1341206729250" TEXT="Delete &quot;Destroy&quot; link"/>
 </node>
 <node CREATED="1341206362546" ID="ID_1681379592" MODIFIED="1341206531843" TEXT="articles#show">
+<node CREATED="1341206733515" ID="ID_1987813350" MODIFIED="1341206740453" TEXT="Add &quot;Destroy&quot; link"/>
 <node CREATED="1341206502828" ID="ID_1462331049" MODIFIED="1341206543921" TEXT="&quot;url&quot; =&gt; truncate"/>
 </node>
 </node>
