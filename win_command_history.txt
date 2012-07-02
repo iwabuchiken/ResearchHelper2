@@ -71,6 +71,15 @@ heroku run rake db:migrate
 [Git: grep]-------------------------------
 git log -3 --grep=master
 
+[Model: Genre]-------------------------------
+#*rails generate scaffold Genre name:string article_id:integer
+#*bundle exec rake db:migrate
+
+#*rails generate migration DeleteColumnFromGenreArticleId
+bundle exec rake db:migrate
+heroku run rake db:migrate
+
+
 [20120702_124201]====================================
 
 ============EOF============

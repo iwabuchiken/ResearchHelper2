@@ -17,8 +17,9 @@
 <%= yield %>
 
 <hr />
-	<%= link_to_unless_current "Articles list", articles_path %>
-	<%= link_to_unless_current "Memos list", memos_path %>
+	<%= link_to_unless_current "Articles list", articles_path %>&nbsp;|&nbsp;
+	<%= link_to_unless_current "Memos list", memos_path %>&nbsp;|&nbsp;
+	<%= link_to_unless_current "Genres list", genres_path %>
 <hr />
 
 </body>
