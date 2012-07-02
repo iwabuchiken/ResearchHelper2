@@ -12,7 +12,8 @@
 
 <p>
   <b>Url:</b>
-  <%= @article.url %>
+  <%#= @article.url %>
+  <%= truncate(@article.url, length:40) %>
 </p>
 
 <p>

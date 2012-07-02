@@ -203,22 +203,29 @@
 </node>
 </node>
 <node CREATED="1341206345890" ID="ID_302218845" MODIFIED="1341206359578" TEXT="B4 =&gt; Beautify views">
-<node CREATED="1341206362546" ID="ID_1908980572" MODIFIED="1341206367343" TEXT="articles#index">
-<node CREATED="1341206502828" ID="ID_737358852" MODIFIED="1341206514187" TEXT="&quot;url&quot; =&gt; &quot;Go&quot;">
+<node CREATED="1341206362546" ID="ID_1908980572" MODIFIED="1341207114187" TEXT="articles#index">
 <icon BUILTIN="button_ok"/>
+<node CREATED="1341206502828" ID="ID_737358852" MODIFIED="1341207109578" TEXT="&quot;url&quot; =&gt; &quot;Go&quot;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="attach"/>
 </node>
-<node CREATED="1341206555375" ID="ID_1558612409" MODIFIED="1341206719234" TEXT="&quot;title&quot; =&gt; add link to &quot;show&quot;">
+<node CREATED="1341206555375" ID="ID_1558612409" MODIFIED="1341207109578" TEXT="&quot;title&quot; =&gt; add link to &quot;show&quot;">
 <icon BUILTIN="button_ok"/>
+<icon BUILTIN="attach"/>
 </node>
-<node CREATED="1341206721171" ID="ID_1397617284" MODIFIED="1341206853484" TEXT="Delete &quot;Destroy&quot; link and &quot;Edit&quot; link">
+<node CREATED="1341206721171" ID="ID_1397617284" MODIFIED="1341207109578" TEXT="Delete &quot;Destroy&quot; link and &quot;Edit&quot; link">
 <icon BUILTIN="button_ok"/>
+<icon BUILTIN="attach"/>
 </node>
 </node>
 <node CREATED="1341206362546" ID="ID_1681379592" MODIFIED="1341206531843" TEXT="articles#show">
-<node CREATED="1341206733515" ID="ID_1987813350" MODIFIED="1341207040906" TEXT="Add &quot;Destroy&quot; link">
+<node CREATED="1341206733515" ID="ID_1987813350" MODIFIED="1341207075656" TEXT="Add &quot;Destroy&quot; link">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="attach"/>
+</node>
+<node CREATED="1341206502828" ID="ID_1462331049" MODIFIED="1341207293515" TEXT="&quot;url&quot; =&gt; truncate">
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1341206502828" ID="ID_1462331049" MODIFIED="1341206543921" TEXT="&quot;url&quot; =&gt; truncate"/>
 </node>
 </node>
 </node>
@@ -230,5 +237,11 @@
 <node CREATED="1341205839968" HGAP="108" ID="ID_842288834" MODIFIED="1341205846765" TEXT="Genre" VSHIFT="96"/>
 </node>
 <node CREATED="1341205885031" HGAP="38" ID="ID_966345579" MODIFIED="1341205894531" POSITION="right" TEXT="Features" VSHIFT="-38"/>
+<node CREATED="1341207080468" ID="ID_1577740429" MODIFIED="1341207083468" POSITION="left" TEXT="Symbols">
+<node CREATED="1341207085000" ID="ID_1469872022" MODIFIED="1341207088062" TEXT="">
+<icon BUILTIN="attach"/>
+<node CREATED="1341207089609" ID="ID_1039084771" MODIFIED="1341207094390" TEXT="=Committed"/>
+</node>
+</node>
 </node>
 </map>
