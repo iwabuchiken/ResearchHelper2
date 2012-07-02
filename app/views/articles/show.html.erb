@@ -17,6 +17,16 @@
 </p>
 
 <p>
+  <b>Genre:</b>
+  <%#= @article.url %>
+	<% if @article.genre != nil %>
+  		<%= @article.genre.id %>
+	<% else %>
+		No entry
+	<% end %>
+</p>
+
+<p>
   <b>Memos:</b><br />
   <% if @memos.length > 0 %>
   	<% @memos.each_with_index do |memo, i| %>
