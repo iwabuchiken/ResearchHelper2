@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Activity:</b>
+  <%= @log.activity %>
+</p>
+
+<p>
+  <b>Memos:</b>
+  <%= @log.memos %>
+</p>
+
+
+<%= link_to 'Edit', edit_log_path(@log) %> |
+<%= link_to 'Back', logs_path %>
