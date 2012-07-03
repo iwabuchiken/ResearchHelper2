@@ -97,11 +97,11 @@ heroku run rake db:migrate
 
 [20120703_150233]====================================
 [Model]-------------------------------
-rails generate scaffold Log activity:string memos:text
+#*rails generate scaffold Log activity:string memos:text
 
-bundle exec rake db:migrate
+#*bundle exec rake db:migrate
 
-heroku run rake db:migrate
+#*heroku run rake db:migrate
 
 
 

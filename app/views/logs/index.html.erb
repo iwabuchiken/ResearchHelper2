@@ -2,20 +2,18 @@
 
 <table>
   <tr>
+  	<th>Id</th>
     <th>Activity</th>
     <th>Memos</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Created at</th>
   </tr>
 
 <% @logs.each do |log| %>
   <tr>
-    <td><%= log.activity %></td>
+  	<td><%= log.id %></td>
+    <td><%= link_to log.activity, log %></td>
     <td><%= log.memos %></td>
-    <td><%= link_to 'Show', log %></td>
-    <td><%= link_to 'Edit', edit_log_path(log) %></td>
-    <td><%= link_to 'Destroy', log, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= log.created_at %></td>
   </tr>
 <% end %>
 </table>
@@ -23,3 +21,4 @@
 <br />
 
 <%= link_to 'New Log', new_log_path %>
+<!-- <td><%#= log.activity %></td> -->

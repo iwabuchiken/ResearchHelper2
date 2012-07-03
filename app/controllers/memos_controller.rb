@@ -33,7 +33,22 @@ class MemosController < ApplicationController
       @memo.article_id = @article_id
     end
     
-
+    #-------------------
+    # Log
+    #-------------------
+    @log_message = params[:controller] + "/" + params[:action]
+    
+    @log = Log.new
+    @log.activity = @log_message
+    
+    if @log.save
+      flash[:log_saved] = "Log saved"
+      # On "flash" => "黒田・佐藤":124
+    else
+      flash[:log_saved] = "Log not saved!"
+    end
+    
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @memo }

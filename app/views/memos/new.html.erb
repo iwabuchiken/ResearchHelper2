@@ -1,3 +1,5 @@
+<%= flash[:log_saved] %>
+
 <h1>New memo</h1>
 
 <%= render 'form' %>
@@ -5,4 +7,7 @@
 <%= link_to 'Back', memos_path %>
 
 <hr />
-@article_id => <%= @article_id %>
+@article_id => <%= @article_id %><br />
+
+<%# @log_message = params[:controller] + "/" + params[:action] %>
+@log_message => <%= @log_message %>
