@@ -6,6 +6,9 @@ a
 cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
 rails s --port 3000
 
+a
+start C:\"Documents and Settings"\iwabuchiken\"Local Settings"\"Application Data"\Google\Chrome\Application\chrome.exe http://localhost:3000/
+
 [Set up 20120529_173711]----------------------------
 rails new ResearchHelper2
 
@@ -90,6 +93,9 @@ Change in logistics files
 heroku run rake db:migrate
 
 
-[]====================================
+[20120703_150233]====================================
+
+
+
 
 ============EOF============

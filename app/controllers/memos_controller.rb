@@ -25,6 +25,14 @@ class MemosController < ApplicationController
   # GET /memos/new.json
   def new
     @memo = Memo.new
+    
+    #
+    @article_id = params[:article_id]
+    
+    if @article_id != nil
+      @memo.article_id = @article_id
+    end
+    
 
     respond_to do |format|
       format.html # new.html.erb
