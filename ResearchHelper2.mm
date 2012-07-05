@@ -816,19 +816,40 @@
 <attribute_layout NAME_WIDTH="105" VALUE_WIDTH="37"/>
 <attribute NAME="version" VALUE="3"/>
 <attribute NAME="TODO" VALUE="3"/>
-<node CREATED="1341206362546" ID="ID_967739218" MODIFIED="1341213739390" TEXT="articles#show">
-<node CREATED="1341296260078" ID="ID_735685475" MODIFIED="1341296291906" TEXT="&quot;&lt;Memo X&gt;&quot; =&gt; Change to &quot;------------ Memo X ------------&quot;"/>
-<node CREATED="1341296315968" ID="ID_231955371" MODIFIED="1341296326828" TEXT="&quot;Memo X&quot; =&gt; Add color ===&gt; Green"/>
+<node CREATED="1341206362546" ID="ID_967739218" MODIFIED="1341462433015" TEXT="articles#show">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341296260078" ID="ID_735685475" MODIFIED="1341462236421" TEXT="&quot;&lt;Memo X&gt;&quot; =&gt; Change to &quot;------------ Memo X ------------&quot;">
+<icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1341297293343" ID="ID_577911739" MODIFIED="1341297296921" TEXT="articles#index">
-<node CREATED="1341297297718" ID="ID_1431744815" MODIFIED="1341297306812" TEXT="New column =&gt; &quot;Number of memos&quot;"/>
+<node CREATED="1341296315968" ID="ID_231955371" MODIFIED="1341462431296" TEXT="&quot;Memo X&quot; =&gt; Add color ===&gt; Green">
+<icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1341206362546" ID="ID_1662357497" MODIFIED="1341213739390" TEXT="memos#index"/>
-<node CREATED="1341206362546" ID="ID_361600917" MODIFIED="1341213739390" TEXT="memos#show">
-<node CREATED="1341206733515" ID="ID_309953307" MODIFIED="1341213798828" TEXT="&quot;Article&quot; =&gt; Show both id and title of the article"/>
+</node>
+<node CREATED="1341297293343" ID="ID_577911739" MODIFIED="1341462522234" TEXT="articles#index">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341297297718" ID="ID_1431744815" MODIFIED="1341462522234" TEXT="New column =&gt; &quot;Number of memos&quot;">
+<icon BUILTIN="button_ok"/>
+</node>
+</node>
+<node CREATED="1341206362546" ID="ID_361600917" MODIFIED="1341462821609" TEXT="memos#show">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341206733515" ID="ID_309953307" MODIFIED="1341462712828" TEXT="&quot;Article&quot; =&gt; Show both id and title of the article">
+<icon BUILTIN="button_ok"/>
+</node>
+<node BACKGROUND_COLOR="#0033cc" COLOR="#ffffff" CREATED="1341461781062" ID="ID_875229085" MODIFIED="1341461797265" TEXT="NEXT"/>
+<node CREATED="1341462126765" ID="ID_609704497" MODIFIED="1341462818515" TEXT="Add link">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1341462130656" ID="ID_289903108" MODIFIED="1341462818515" TEXT="=&gt; To the article#show to which the memo belongs">
+<icon BUILTIN="button_ok"/>
+</node>
+</node>
 </node>
 <node CREATED="1341301402812" ID="ID_1715894766" MODIFIED="1341301406312" TEXT="logs#index">
-<node CREATED="1341301407203" ID="ID_1149938131" MODIFIED="1341301422140" TEXT="Time =&gt; Change to local"/>
+<node CREATED="1341301407203" ID="ID_1149938131" MODIFIED="1341301422140" TEXT="Time =&gt; Change to local">
+<node CREATED="1341462929796" ID="ID_660197285" MODIFIED="1341462936062" TEXT="REF">
+<node CREATED="1341462936921" ID="ID_190029867" MODIFIED="1341462945921" TEXT="=&gt; config/environment.rb"/>
+</node>
+</node>
 </node>
 <node CREATED="1341301402812" ID="ID_1073600169" MODIFIED="1341301433796" TEXT="logs#show">
 <node CREATED="1341301407203" ID="ID_1008436031" MODIFIED="1341301422140" TEXT="Time =&gt; Change to local"/>

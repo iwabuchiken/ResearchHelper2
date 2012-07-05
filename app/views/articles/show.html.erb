@@ -30,7 +30,10 @@
   <b>Memos:</b><br />
   <% if @memos.length > 0 %>
   	<% @memos.each_with_index do |memo, i| %>
-  		&lt;Memo <%= i + 1 %>&gt;<br />
+  		<span style="color: green;">------------</span> 
+  						Memo <%= i + 1 %>
+		 <span style="color: green;">--------------</span>
+		<br />		 
   		<%= memo.text %><br />
   	<% end %>
   <% else %>

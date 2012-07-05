@@ -1,5 +1,14 @@
 a
 cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
+a
+
+a
+cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
+gitk
+
+a
+cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
+a
 gitk
 
 a
@@ -76,6 +85,8 @@ heroku run rake db:migrate
 [Git: grep]-------------------------------
 git log -3 --grep=master
 git log -3 --grep=logistics
+git log -3 --grep=beautify
+git log -3 --grep=B4
 
 [Model: Genre]-------------------------------
 #*rails generate scaffold Genre name:string article_id:integer

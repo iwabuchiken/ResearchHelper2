@@ -16,7 +16,7 @@
 
 <p>
   <b>Article:</b>
-  <%= @memo.article_id %>
+  <%= link_to @memo.article.title, @memo.article %>&nbsp;(id=<%= @memo.article_id %>)
 </p>
 
 
