@@ -65,8 +65,47 @@ class MemosController < ApplicationController
   def create
     @memo = Memo.new(params[:memo])
 
+    # Log --------------------------
+    # @log = Log.new
+    # @log.memos = params[:controller] + "/" + params[:action] +
+                        # #" => " + @memo.id + " : " + @memo.title
+                        # " => " + @memo.title
+    
+    # if @log.save
+      # flash[:log_saved] = "Log saved"
+      # flash[:log_saved] = @memo.text
+      # flash[:log_saved] = "@memo.id => " + @memo.id.to_s
+      # On "flash" => "黒田・佐藤":124
+    # else
+      # flash[:log_saved] = "Log not saved!"
+    # end
+    
+    #/ Log --------------------------
+
     respond_to do |format|
       if @memo.save
+        
+        # Log --------------------------
+        @log = Log.new
+        @log.memos = params[:controller] + "/" + params[:action] +
+                            # " => " + @memo.id + " : " + @memo.text
+                            # " => " + @memo.title
+                            " => " + @memo.id.to_s + " : " + @memo.text
+        
+        if @log.save
+          flash[:log_saved] = "Log saved"
+          # flash[:log_saved] = @memo.text
+          # flash[:log_saved] = "@memo.id => " + @memo.id.to_s
+          # On "flash" => "黒田・佐藤":124lse
+        else
+          flash[:log_saved] = "Log not saved!"
+        end
+        
+        #/ Log --------------------------
+        # Log
+        # flash[:log_saved] = @memo.title
+        # flash[:log_saved] = "@memo.id => " + @memo.id.to_s
+        
         format.html { redirect_to @memo, notice: 'Memo was successfully created.' }
         format.json { render json: @memo, status: :created, location: @memo }
       else
