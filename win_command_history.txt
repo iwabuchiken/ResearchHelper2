@@ -11,6 +11,7 @@ cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
 a
 gitk
 
+(Rails)
 a
 cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
 rails s --port 3000
@@ -18,7 +19,15 @@ rails s --port 3000
 a
 start C:\"Documents and Settings"\iwabuchiken\"Local Settings"\"Application Data"\Google\Chrome\Application\chrome.exe http://localhost:3000/
 
-C:\WORKS\WORKSPACES_ANDROID\FM\Activity_log.mm
+C:\WORKS\WORKSPACES_ANDROID\FM\Activity_log.mm C:\WORKS\WORKSPACES_APTANA\FM_APTANA\ResearchHelper2.mm
+
+(Git for FreeMind files)
+pushd C:\WORKS\WORKSPACES_APTANA\FM_APTANA
+gitk
+
+(Git)
+git log --grep=B4 -3
+
 
 [Set up 20120529_173711]----------------------------
 rails new ResearchHelper2

@@ -28,40 +28,31 @@
 
 <p>
   <!-- <b>Memos:</b><br /> -->
-  <dl class="accordion">
-		<!-- <dt class="opened"> -->
-		<dt>
-			<b>Memos:</b>
-			
-			<% if @memos != nil %>
-				(<%= @memos.size %>)
-			<% else %>
-				(0)
-			<% end %>
-			<br />
-		</dt>
-
-		<dd>
+  <dl class="accordion"><b>Memos:</b><br />
   
-	  	<% if @memos.length > 0 %>
-	  		<% @memos.each_with_index do |memo, i| %>
-
-		  			<span style="color: green;">------------</span> 
-						<%= i + 1 %>
-				 	<span style="color: green;">--------------</span>
-
-				<br />
-				
-		  			<%#= memo.text %>
-		  			<%= link_to memo.text, :controller => "memos", :action => "show", :id => memo.id %>
-		  		
-		  		<br />
+	  <% if @memos.length > 0 %>
+	  	<% @memos.each_with_index do |memo, i| %>
+	  		<% if i == -1 %>
+	  			<dt class="opened">
+			<% else %>
+				<dt>
+			<% end %>
+	  			<span style="color: green;">------------</span> 
+					<%= i + 1 %>
+			 	<span style="color: green;">--------------</span>
+			 </dt>
+			 
+			<br />
+			
+			<dd>	 
+	  			<%= memo.text %>
+	  		</dd>
 	  		
-	  		<% end %>
+	  		<br />
 	  		
-  		</dd>
+	  	<% end %>
 	  <% else %>
-		  	No memo
+	  	No memo
 	  <% end %>
 	</dl>
 </p>

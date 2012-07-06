@@ -1,4 +1,11 @@
-<h1>Listing articles</h1>
+<div>
+	<span class="page_title">
+		記事のリスト
+	</span>
+	
+	&nbsp;&nbsp;(<%= link_to 'New Article', new_article_path %>)</div>
+
+<br />
 
 <table>
   <tr>
@@ -14,13 +21,13 @@
   <tr>
   	<td><%= article.id %></td>
     <td><%= link_to article.title, article %></td>
-    <td><%= article.text %></td>
-    
+<!--     <td><%#= article.text %></td> -->
+    <td><%= truncate(article.text, length: 40) %></td>
     <td><%= article.memo.size %></td>
     
     <td><%= link_to "Go", article.url %></td>
     <% if article.genre != nil %>
-    	<td><%= article.genre.id %></td>
+    	<td><%= article.genre.name %> (<%= article.genre.id %>)</td>
     <% else %>
 		<td>No entry</td>
 	<% end %>
