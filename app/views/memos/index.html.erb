@@ -21,7 +21,7 @@
 <% @memos.each do |memo| %>
   <tr>
   	<td><%= memo.id %></td>
-  	<td><%= link_to memo.text, memo %></td>
+  	<td><%= link_to truncate(memo.text, length: 40), memo %></td>
   </tr>
 <% end %>
 
