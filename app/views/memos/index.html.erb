@@ -22,6 +22,12 @@
   <tr>
   	<td><%= memo.id %></td>
   	<td><%= link_to truncate(memo.text, length: 40), memo %></td>
+  	
+  	<% if memo.url.length != 0 %>
+  		<td><%= link_to "Go", memo.url %></td>
+  	<% else %>
+  		<td>No Data</td>
+  	<% end %>
   </tr>
 <% end %>
 
