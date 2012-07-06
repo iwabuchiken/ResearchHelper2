@@ -26,11 +26,13 @@
     <td><%= article.memo.size %></td>
     
     <td><%= link_to "Go", article.url %></td>
+    
     <% if article.genre != nil %>
     	<td><%= article.genre.name %> (<%= article.genre.id %>)</td>
     <% else %>
 		<td>No entry</td>
 	<% end %>
+	
   </tr>
 <% end %>
 </table>

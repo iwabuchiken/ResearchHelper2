@@ -18,7 +18,11 @@
 
 <p>
   <b>Article:</b>
-  <%= link_to @memo.article.title, @memo.article %>&nbsp;(id=<%= @memo.article_id %>)
+	<% if @memo.article != nil %>  
+		<%= link_to @memo.article.title, @memo.article %>&nbsp;(id=<%= @memo.article_id %>)
+	<% else %>
+		No entry
+	<% end %>
 </p>
 
 

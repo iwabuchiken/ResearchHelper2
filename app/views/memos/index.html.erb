@@ -26,12 +26,21 @@
   	<% if memo.url.length != 0 %>
   		<td><%= link_to "Go", memo.url %></td>
   	<% else %>
-  		<td>No Data</td>
+  		<td>No data</td>
   	<% end %>
   	
-  	<td class="col_memo_center"><%= memo.article.title %>(<%= memo.article_id %>)</td>
+  	<% if memo.article != nil %>
+  		<td class="col_memo_center"><%= memo.article.title %>(<%= memo.article_id %>)</td>
+  	<% else %>
+  		<td>No data</td>
+  	<% end %>
   	
-  	<td><%= memo.article.genre.name %>(<%= memo.article.genre.id %>)</td>
+  	<% if memo.article != nil and  memo.article.genre != nil %>
+  		<td><%= memo.article.genre.name %>(<%= memo.article.genre.id %>)</td>
+  	<% else %>
+  		<td>No data</td>
+  	<% end %>
+
   	
   </tr>
 <% end %>
