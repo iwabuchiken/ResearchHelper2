@@ -1,11 +1,60 @@
+<div id="top"></div>
 <div>
 	<span class="page_title">
 		記事のリスト
 	</span>
 	
-	&nbsp;&nbsp;(<%= link_to 'New Article', new_article_path %>)</div>
+	&nbsp;&nbsp;(<%= link_to 'New Article', new_article_path %>)
+	
+		&nbsp;<%= link_to 'To bottom', "#bottom" %>
+		
+</div>
 
-<br />
+<hr />
+	<dl class="accordion">
+		<dt>
+			<span style="color: green">Admin data</span>
+		</dt>
+	
+		<dd>
+			@genre_id => <%= @genre_id %>
+			<br />
+			
+			@genre_id.class => <%= @genre_id.class %>
+			<br />
+			
+			@params => <%= @params %>
+			<br />
+			
+			@params[:genre] => <%= @params[:genre] %>
+			<br />
+			
+			<% if @params[:genre] %>
+				@params[:genre][:id] => <%= @params[:genre][:id] %>
+				<br />
+				
+				@params[:genre][:id].class => <%= @params[:genre][:id].class %>
+				<br />
+			<% else %>
+				@params[:genre][:id] => nil
+				<br />
+				
+				@params[:genre][:id].class => nil
+				<br />
+			<% end %>
+			
+			@id_all => <%= @id_all %>
+			<br />
+			
+			@id_all.name => <%= @id_all.name %>
+			<br />
+			
+			@id_all.id => <%= @id_all.id %>
+			<br />
+			
+		</dd>
+	</dl>
+<hr />
 
 <table>
   <tr>
@@ -14,7 +63,16 @@
     <th>Text</th>
     <th>Memos</th>
     <th>Url</th>
-    <th>Genre</th>
+    <th>
+		<!--  REF => NewsReader2\app\views\categories\_form.html.erb -->
+		Genre <%= form_tag('', :method => :get) do %>
+			<%= select("genre", "id", Genre.all.collect {|g| [g.name, g.id]}, {:name => "genre_id"})%>
+			
+			<%#= select("genre", "id", Genre.all.collect {|g| [g.id, g.name]})%>
+			<%= submit_tag "Go" %>
+		    
+		<% end %>
+	</th>
   </tr>
 
 <% @articles.each do |article| %>
@@ -40,5 +98,8 @@
 <br />
 
 <%= link_to 'New Article', new_article_path %>
+&nbsp;| <%= link_to 'To top', "#top" %>
 
+
+<div id="bottom"></div>
 <%#= article.url %>

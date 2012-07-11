@@ -1,9 +1,47 @@
+require 'basics'
+include BASICS
+
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    #--------------------------
+    # Steps
+    # 1. Get genre id
+    # 2. Get articles
+    #--------------------------
 
+    #--------------------------
+    # 1. Get genre id
+    #--------------------------    
+    # @genre_id = params[:genre_id]
+    if params[:genre]
+        @genre_id = params[:genre][:id]
+    else
+        @genre_id = nil
+    end
+    
+    if @genre_id != nil and BASICS.is_numeric?(@genre_id)
+        genre_id = @genre_id.to_i
+    else
+        genre_id = nil
+    end
+    
+    @params = params
+    
+    #--------------------------
+    # 2. Get articles
+    #--------------------------
+    @id_all = Genre.find_by_name("ALL")
+    
+    if @id_all.id.to_i == genre_id
+      @articles = Article.all
+    elsif genre_id
+      @articles = Article.find_all_by_genre_id(genre_id)
+    else
+      @articles = Article.all
+    end
+        
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
