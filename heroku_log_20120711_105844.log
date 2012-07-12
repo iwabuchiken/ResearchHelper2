@@ -1,0 +1,101 @@
+2012-07-11T00:54:11+00:00 app[web.1]: cache: [GET /genres/4] miss
+2012-07-11T00:54:11+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/genres/4 dyno=web.1 queue=0 wait=0ms service=13ms status=200 bytes=2359
+2012-07-11T00:54:14+00:00 app[web.1]: 
+2012-07-11T00:54:14+00:00 app[web.1]: 
+2012-07-11T00:54:14+00:00 app[web.1]: Started GET "/articles" for 101.111.248.97 at 2012-07-11 00:54:14 +0000
+2012-07-11T00:54:14+00:00 app[web.1]: Processing by ArticlesController#index as HTML
+2012-07-11T00:54:14+00:00 app[web.1]:   Rendered articles/index.html.erb within layouts/application (101.6ms)
+2012-07-11T00:54:14+00:00 app[web.1]: Completed 200 OK in 107ms (Views: 58.6ms | ActiveRecord: 46.8ms)
+2012-07-11T00:54:14+00:00 app[web.1]: cache: [GET /articles] miss
+2012-07-11T00:54:14+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles dyno=web.1 queue=0 wait=0ms service=148ms status=200 bytes=9988
+2012-07-11T00:54:16+00:00 app[web.1]: 
+2012-07-11T00:54:16+00:00 app[web.1]: 
+2012-07-11T00:54:16+00:00 app[web.1]: Started GET "/articles/26" for 101.111.248.97 at 2012-07-11 00:54:16 +0000
+2012-07-11T00:54:16+00:00 app[web.1]:   Parameters: {"id"=>"26"}
+2012-07-11T00:54:16+00:00 app[web.1]: Processing by ArticlesController#show as HTML
+2012-07-11T00:54:16+00:00 app[web.1]:   Rendered articles/show.html.erb within layouts/application (2.0ms)
+2012-07-11T00:54:16+00:00 app[web.1]: Completed 200 OK in 16ms (Views: 4.6ms | ActiveRecord: 10.5ms)
+2012-07-11T00:54:16+00:00 app[web.1]: cache: [GET /articles/26] miss
+2012-07-11T00:54:16+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles/26 dyno=web.1 queue=0 wait=0ms service=23ms status=304 bytes=0
+2012-07-11T00:54:22+00:00 app[web.1]: 
+2012-07-11T00:54:22+00:00 app[web.1]: 
+2012-07-11T00:54:22+00:00 app[web.1]: Started GET "/articles/26/edit" for 101.111.248.97 at 2012-07-11 00:54:22 +0000
+2012-07-11T00:54:22+00:00 app[web.1]: Processing by ArticlesController#edit as HTML
+2012-07-11T00:54:22+00:00 app[web.1]:   Parameters: {"id"=>"26"}
+2012-07-11T00:54:22+00:00 app[web.1]:   Rendered articles/_form.html.erb (4.0ms)
+2012-07-11T00:54:22+00:00 app[web.1]:   Rendered articles/edit.html.erb within layouts/application (5.3ms)
+2012-07-11T00:54:22+00:00 app[web.1]: Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.9ms)
+2012-07-11T00:54:22+00:00 app[web.1]: cache: [GET /articles/26/edit] miss
+2012-07-11T00:54:22+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles/26/edit dyno=web.1 queue=0 wait=0ms service=41ms status=200 bytes=3363
+2012-07-11T00:54:30+00:00 app[web.1]: 
+2012-07-11T00:54:30+00:00 app[web.1]: Processing by ArticlesController#index as HTML
+2012-07-11T00:54:30+00:00 app[web.1]: 
+2012-07-11T00:54:30+00:00 app[web.1]: Started GET "/articles" for 101.111.248.97 at 2012-07-11 00:54:30 +0000
+2012-07-11T00:54:30+00:00 app[web.1]:   Rendered articles/index.html.erb within layouts/application (68.6ms)
+2012-07-11T00:54:30+00:00 app[web.1]: Completed 200 OK in 110ms (Views: 28.9ms | ActiveRecord: 79.5ms)
+2012-07-11T00:54:30+00:00 app[web.1]: cache: [GET /articles] miss
+2012-07-11T00:54:30+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles dyno=web.1 queue=0 wait=0ms service=116ms status=304 bytes=0
+2012-07-11T00:54:44+00:00 app[web.1]: 
+2012-07-11T00:54:44+00:00 app[web.1]: 
+2012-07-11T00:54:44+00:00 app[web.1]:   Parameters: {"id"=>"26"}
+2012-07-11T00:54:44+00:00 app[web.1]: Started GET "/articles/26" for 101.111.248.97 at 2012-07-11 00:54:44 +0000
+2012-07-11T00:54:44+00:00 app[web.1]: Processing by ArticlesController#show as HTML
+2012-07-11T00:54:44+00:00 app[web.1]:   Rendered articles/show.html.erb within layouts/application (1.3ms)
+2012-07-11T00:54:44+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 2.3ms)
+2012-07-11T00:54:44+00:00 app[web.1]: cache: [GET /articles/26] miss
+2012-07-11T00:54:44+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles/26 dyno=web.1 queue=0 wait=0ms service=13ms status=304 bytes=0
+2012-07-11T00:54:48+00:00 app[web.1]: 
+2012-07-11T00:54:48+00:00 app[web.1]: 
+2012-07-11T00:54:48+00:00 app[web.1]: Started GET "/articles/26/edit" for 101.111.248.97 at 2012-07-11 00:54:48 +0000
+2012-07-11T00:54:48+00:00 app[web.1]: Processing by ArticlesController#edit as HTML
+2012-07-11T00:54:48+00:00 app[web.1]:   Parameters: {"id"=>"26"}
+2012-07-11T00:54:48+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles/26/edit dyno=web.1 queue=0 wait=0ms service=13ms status=304 bytes=0
+2012-07-11T00:54:48+00:00 app[web.1]:   Rendered articles/edit.html.erb within layouts/application (3.3ms)
+2012-07-11T00:54:48+00:00 app[web.1]:   Rendered articles/_form.html.erb (2.7ms)
+2012-07-11T00:54:48+00:00 app[web.1]: Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 2.2ms)
+2012-07-11T00:54:48+00:00 app[web.1]: cache: [GET /articles/26/edit] miss
+2012-07-11T00:55:07+00:00 app[web.1]: Started GET "/articles" for 101.111.248.97 at 2012-07-11 00:55:07 +0000
+2012-07-11T00:55:07+00:00 app[web.1]: Processing by ArticlesController#index as HTML
+2012-07-11T00:55:07+00:00 app[web.1]: 
+2012-07-11T00:55:07+00:00 app[web.1]: 
+2012-07-11T00:55:07+00:00 app[web.1]:   Rendered articles/index.html.erb within layouts/application (95.9ms)
+2012-07-11T00:55:07+00:00 app[web.1]: Completed 200 OK in 102ms (Views: 50.1ms | ActiveRecord: 50.5ms)
+2012-07-11T00:55:07+00:00 app[web.1]: cache: [GET /articles] miss
+2012-07-11T00:55:07+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles dyno=web.1 queue=0 wait=0ms service=108ms status=304 bytes=0
+2012-07-11T00:58:36+00:00 app[web.1]: cache: [GET /favicon.ico] stale, valid, store
+2012-07-11T00:58:36+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=11ms status=200 bytes=0
+2012-07-11T01:55:47+00:00 heroku[slugc]: Slug compilation started
+2012-07-11T01:56:31+00:00 heroku[api]: Release v32 created by iwabuchi.k.2010@gmail.com
+2012-07-11T01:56:31+00:00 heroku[api]: Deploy ffc2176 by iwabuchi.k.2010@gmail.com
+2012-07-11T01:56:32+00:00 heroku[web.1]: State changed from up to starting
+2012-07-11T01:56:35+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-07-11T01:56:35+00:00 heroku[slugc]: Slug compilation finished
+2012-07-11T01:56:36+00:00 app[web.1]: [2012-07-11 01:56:36] ERROR SignalException: SIGTERM
+2012-07-11T01:56:36+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-07-11T01:56:44+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-07-11T01:56:44+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-07-11T01:56:46+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 3115`
+2012-07-11T01:56:46+00:00 heroku[web.1]: Process exited with status 137
+2012-07-11T01:56:50+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-07-11T01:56:50+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Mo
+ve them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-07-11T01:56:57+00:00 app[web.1]: [2012-07-11 01:56:56] INFO  WEBrick 1.3.1
+2012-07-11T01:56:57+00:00 app[web.1]: [2012-07-11 01:56:57] INFO  WEBrick::HTTPServer#start: pid=2 port=3115
+2012-07-11T01:56:57+00:00 app[web.1]: [2012-07-11 01:56:57] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-07-11T01:56:57+00:00 heroku[web.1]: State changed from starting to up
+2012-07-11T01:58:17+00:00 app[web.1]: => Booting WEBrick
+2012-07-11T01:58:17+00:00 app[web.1]: => Rails 3.2.1 application starting in production on http://0.0.0.0:3115
+2012-07-11T01:58:17+00:00 app[web.1]: => Call with -d to detach
+2012-07-11T01:58:17+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-07-11T01:58:17+00:00 app[web.1]: 
+2012-07-11T01:58:17+00:00 app[web.1]: 
+2012-07-11T01:58:17+00:00 app[web.1]: Started GET "/articles" for 101.111.248.97 at 2012-07-11 01:58:17 +0000
+2012-07-11T01:58:17+00:00 app[web.1]: Processing by ArticlesController#index as HTML
+2012-07-11T01:58:17+00:00 app[web.1]: Completed 500 Internal Server Error in 76ms
+2012-07-11T01:58:17+00:00 app[web.1]: 
+2012-07-11T01:58:17+00:00 app[web.1]: NoMethodError (undefined method `id' for nil:NilClass):
+2012-07-11T01:58:17+00:00 app[web.1]:   app/controllers/articles_controller.rb:37:in `index'
+2012-07-11T01:58:17+00:00 app[web.1]: 
+2012-07-11T01:58:17+00:00 app[web.1]: 
+2012-07-11T01:58:17+00:00 app[web.1]: cache: [GET /articles] miss
+2012-07-11T01:58:17+00:00 heroku[router]: GET cosmos-research-helper-2.herokuapp.com/articles dyno=web.1 queue=0 wait=0ms service=279ms status=500 bytes=643
