@@ -1,7 +1,6 @@
 a
 cd C:\WORKS\WORKSPACES_APTANA\ResearchHelper2
 a
-
 rails s --port 3001
 
 a

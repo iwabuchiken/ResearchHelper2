@@ -52,20 +52,38 @@
 			@id_all.id => <%= @id_all.id %>
 			<br />
 			
+			@sort_type => <%= @sort_type %>
+			<br />
+
 		</dd>
 	</dl>
 <hr />
 
 <table>
   <tr>
-  	<th>Id</th>
-    <th>Title</th>
+  	<th>
+  		<%= link_to "Id", :controller => 'articles', :action => 'index', :sort_type => 'id' %>
+  		
+  	</th>
+    <th>
+    	<%= link_to "Title", :controller => 'articles', :action => 'index', :sort_type => 'title' %>
+    	
+	</th>
     <th>Text</th>
     <th>Memos</th>
     <th>Url</th>
     <th>
 		<!--  REF => NewsReader2\app\views\categories\_form.html.erb -->
-		Genre <%= form_tag('', :method => :get) do %>
+		<%#= form_tag('articles?sort_type=genre', :method => :get) do %>
+		<%#= form_tag('', :method => :get, :sort_type => 'genre') do %>
+			<%#= submit_tag "Genre" %>
+			<%#= submit_tag "Genre", :sort_type => 'genre' %>
+		<%# end %>
+		<%#= link_to "Genre", articles_path, :sort_type => 'genre' %>
+		<%#= link_to "Genre", :controller => 'articles', :action => 'index', :sort_type => 'genre' %>
+		<%= link_to "Genre", :controller => 'articles', :action => 'index', :sort_type => 'genre_id' %>
+		
+		<%= form_tag('', :method => :get) do %>
 			<%= select("genre", "id", Genre.all.collect {|g| [g.name, g.id]}, {:name => "genre_id"})%>
 			
 			<%#= select("genre", "id", Genre.all.collect {|g| [g.id, g.name]})%>

@@ -7,7 +7,8 @@ class ArticlesController < ApplicationController
   def index
     #--------------------------
     # Steps
-    # 1. Get genre id
+    # 1. Get genre id from params
+    # 1-2. Get sort_type from params
     # 2. Get articles
     #--------------------------
 
@@ -30,16 +31,30 @@ class ArticlesController < ApplicationController
     @params = params
     
     #--------------------------
+    # 1-2. Get sort_type from params
+    #--------------------------
+    @sort_type = params[:sort_type]
+    
+    if @sort_type == nil
+      @sort_type = "id"
+    end
+    
+    #--------------------------
     # 2. Get articles
     #--------------------------
     @id_all = Genre.find_by_name("ALL")
     
-    if @id_all.id.to_i == genre_id
-      @articles = Article.all
-    elsif genre_id
-      @articles = Article.find_all_by_genre_id(genre_id)
+    if @id_all.id.to_i == genre_id    #=> Select all items
+      # @articles = Article.all
+      @articles = Article.find(:all, :order => @sort_type)
+    elsif genre_id          #=> Select by genre id
+      # @articles = Article.find_all_by_genre_id(genre_id)
+      # @articles = Article.find(:all, :genre_id => genre_id, :order => @sort_type)
+      # @articles = Article.find_by_genre_id(:all, :order => @sort_type)
+      @articles = Article.find_all_by_genre_id(genre_id, :order => @sort_type)
     else
-      @articles = Article.all
+      # @articles = Article.all
+      @articles = Article.find(:all, :order => @sort_type)
     end
         
     respond_to do |format|
