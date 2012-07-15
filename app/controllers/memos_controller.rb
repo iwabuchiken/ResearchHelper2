@@ -2,7 +2,30 @@ class MemosController < ApplicationController
   # GET /memos
   # GET /memos.json
   def index
-    @memos = Memo.all
+    #--------------------------
+    # Steps
+    # 1. Get sort_type from params
+    
+    #--------------------------
+
+    #--------------------------
+    # 1. Get sort_type from params
+    #--------------------------
+    @sort_type = params[:sort_type]
+    
+    if @sort_type == nil
+      @sort_type = "id"
+    end
+
+    
+    # Get memos
+    @memos = Memo.find(:all, :order => @sort_type)
+    # @memos = Memo.find(:all, :order => "article_id")
+    
+    # @memos = @memos.sort {|a, b| a.article.genre_id <=> b.article.genre_id}
+    # @memos = @memos.sort {|a, b| a.article.genre_id <=> b.article.genre_id}
+    
+    # @memos = Memo.all
 
     respond_to do |format|
       format.html # index.html.erb

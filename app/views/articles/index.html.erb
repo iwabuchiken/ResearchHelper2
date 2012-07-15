@@ -121,3 +121,24 @@
 
 <div id="bottom"></div>
 <%#= article.url %>
+
+<hr/>
+
+<!-- REF => 山田: 360 -->
+
+<span id="async"><%= Time.now %></span>
+<%#= link_to 'Update', {:action => 'async_process'}, :remote => true %>
+<%= button_to 'Update(remote)', {:action => 'async_process'}, :remote => true %>
+<%= button_to 'Update', {:action => 'async_process'}, :method => 'get' %>
+<br />
+
+<input type="button" value="Ajax" onclick="test1()" /><br/>
+
+
+<!-- REF=> http://stackoverflow.com/questions/5441518/onclick-doesnt-work-in-button-to -->
+<!-- REF=> http://www.ruby-forum.com/topic/12118 -->
+<%= button_to "Ajax(button_to)", "javascript:test2()" %><br />
+
+<!-- REF => http://guides.rubyonrails.org/ajax_on_rails.html#hello-ajax-a-quick-intro -->
+<%= button_to "Index", {:action => "index", :genre => 'history'}, :remote => true, :form => { "data-type" => "json" } %>
+

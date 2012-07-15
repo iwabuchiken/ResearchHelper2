@@ -11,23 +11,11 @@
 
 <table>
   <tr>
-  	<th>
-  		<%= link_to "Id", :controller => 'memos', :action => 'index', :sort_type => 'id' %>
-	</th>
-    <th>
-    	<%= link_to "Text", :controller => 'memos', :action => 'index', :sort_type => 'text' %>
-	</th>
-    <th>
-    	Url
-	</th>
-    <th>
-    	
-    	<%= link_to "Article", :controller => 'memos', :action => 'index', :sort_type => 'article_id' %>
-	</th>
-    <th>
-    	Genre
-    	<%#= link_to "Genre", :controller => 'memos', :action => 'index', :sort_type => 'article.genre_id' %>
-	</th>
+  	<th>Id</th>
+    <th>Text</th>
+    <th>Url</th>
+    <th>Article</th>
+    <th>Genre</th>
   </tr>
 
 <% @memos.each do |memo| %>
@@ -59,6 +47,3 @@
 
 
 </table>
-
-<!-- <hr /> -->
-<%#= @memos.class %>

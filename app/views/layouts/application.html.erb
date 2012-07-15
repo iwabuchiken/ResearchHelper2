@@ -6,12 +6,39 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   
+  <%= javascript_include_tag "/basics" %>
+  
   <meta name="viewport"
            content="width=device-width,
            　　　　　　　　　　　  　user-scalable=yes,
           　　　　　　　　　　　  　 initial-scale=2.0,
                     maximum-scale=3.0" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	
+	
+	<script type="text/javascript">
+		//REF=> http://semooh.jp/jquery/api/ajax/jQuery.ajax/options/
+		function test1() {
+			$.ajax({
+				// type: "POST",
+				type: "GET",
+				url: "articles/async_process",
+				success: function(msg) {
+					alert(msg);
+					
+					$('#async').html("<b>" + msg + "</b>");
+				}
+			});
+			// $('#async').html("<b>YES</b>");
+			
+			// alert("yes");
+		}
+		
+		// function test2() {
+			// alert("test2");
+		// }
+	</script>
+	
 	
 	<script type="text/javascript">
 		$(function() {

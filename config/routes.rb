@@ -1,4 +1,7 @@
 ResearchHelper2::Application.routes.draw do
+  
+  get "articles/async_process" => "articles#async_process"
+  
   resources :logs
 
   resources :genres
@@ -9,6 +12,9 @@ ResearchHelper2::Application.routes.draw do
 
   #
   root :to => "articles#index"
+  
+  # 山田: 360
+  # get "articles/async_process" => "articles#async_process"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

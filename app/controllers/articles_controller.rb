@@ -55,13 +55,15 @@ class ArticlesController < ApplicationController
     else
       # @articles = Article.all
       @articles = Article.find(:all, :order => @sort_type)
-    end
-        
+    end#if @id_all.id.to_i == genre_id
+  
+    # session[:articles] = @articles    #=> ActionDispatch::Cookies::CookieOverflow in ArticlesController#index
+            
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
     end
-  end
+  end#def index
 
   # GET /articles/1
   # GET /articles/1.json
@@ -135,4 +137,24 @@ class ArticlesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def async_process
+    
+    @time = Time.now.to_s
+    
+    render :partial => 'async_current'
+    # render text: "abcde"
+    # render text: @time = Time.now.to_s
+    # render text: Genre.all.first.name
+    
+    
+    # @time = Time.now.to_s
+#     
+    # respond_to do |format|
+      # # format.html { redirect_to articles_url }
+      # format.js
+      # format.json { head :no_content }
+    # end
+  end#def async_process
+
 end
